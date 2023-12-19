@@ -22,7 +22,7 @@ Professional README Generator is a tool designed to streamline the creation of h
 
 ## Demo
 
-Challenges\Professional-README-Generator\starter\utils\Professional README Generator Video.mp4
+![alt text](./starter/utils/Professional%20README%20Generator%20Video.mp4) 
 
 
 ## Credits
