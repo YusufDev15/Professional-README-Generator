@@ -23,7 +23,7 @@ const questions = [
   {
     type: "input",
     name: "usage",
-    message: "Provide the languages and technologies used?",
+    message: "Provide the languages/technologies used?",
   },
   {
     type: "checkbox",

@@ -29,7 +29,7 @@ function renderLicenseSection(license) {
 // function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
-  by " " ${data.name}
+  by ${data.name}
   ${renderLicenseBadge(data.license)}
   
   ## Description 
@@ -41,7 +41,36 @@ function generateMarkdown(data) {
   * [Contribution](#contributors)
   * [Tests](#tests)
   * [Questions](#questions)
-   ${renderLicenseLink(data.license)}
+    ${renderLicenseLink(data.license)}
 
+   ## Installation
+
+   To install dependencies, run these commands:
+   
+   \`\`\`
+   ${data.installation}
+   \`\`\`
+   
+   ## Usage
+   ${data.usage}
+   
+   ## Contribution
+   ${data.contributors}
+   
+   ## Tests
+   
+   \`\`\`
+   ${data.test}
+   \`\`\`
+   
+   ## Questions
+   * Name: ${data.name}
+   * Email: ${data.email}
+   * GitHub: [${data.creator}](https://github.com/${data.creator}/)
+   
+   ${renderLicenseSection(data.license)}
+   
+   
    `;
 }
+module.exports = generateMarkdown;
